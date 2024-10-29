@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لیست اتاق‌های هتل</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">هتل ما</div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">خانه</a></li>
+                    <li><a href="contact.html">ارتباط با ما</a></li>
+                    <li><a href="logout.html">خروج</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-filter">
+        <input type="text" id="searchInput" placeholder="جستجوی اتاق..." oninput="filterRooms()">
+    </section>
+
+    <section class="rooms">
+        <h2>اتاق‌ها</h2>
+        <div class="room-list" id="roomList">
+            <div class="room" onclick="openModal(1)" data-name="اتاق ۱">
+                <h3>اتاق ۱</h3>
+                <p>۲ تخت‌خواب، صبحانه رایگان</p>
+            </div>
+            <div class="room" onclick="openModal(2)" data-name="اتاق ۲">
+                <h3>اتاق ۲</h3>
+                <p>۱ تخت‌خواب، نمای دریا</p>
+            </div>
+            <!-- اتاق‌های دیگر... -->
+        </div>
+    </section>
+
+    <!-- مودال برای نمایش جزئیات اتاق و اسلایدر تصاویر -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="room-title">عنوان اتاق</h3>
+            <p id="room-description">توضیحات اتاق</p>
+
+            <!-- اسلایدر تصاویر -->
+            <div class="slider">
+                <img id="slider-image" src="" alt="تصویر اتاق">
+                <button onclick="prevImage()">قبلی</button>
+                <button onclick="nextImage()">بعدی</button>
+            </div>
+            <p id="room-price">قیمت: </p>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

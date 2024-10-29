@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارتباط با ما</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>ارتباط با ما</h1>
+        <div class="contact-info">
+            <h2>اطلاعات تماس</h2>
+            <p><strong>آدرس:</strong> خیابان ولیعصر، نبش خیابان میرداماد، تهران</p>
+            <p><strong>تلفن:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+            <p><strong>ایمیل:</strong> info@example.com</p>
+        </div>
+
+        <div class="map">
+            <h2>نقشه</h2>
+            <iframe src="https://maps.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8021473914234!2d51.41194791534156!3d35.71542064019513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8dbb59f3542ef9%3A0x3655a684a7ef9638!2sTehran!5e0!3m2!1sen!2s!4v1601358970595!5m2!1sen!2s" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="contact-form">
+            <h2>فرم تماس</h2>
+            <form action="/send-message" method="post">
+                <input type="text" placeholder="نام شما" name="name" required>
+                <input type="email" placeholder="ایمیل شما" name="email" required>
+                <textarea placeholder="پیام شما" name="message" rows="5" required></textarea>
+                <button type="submit">ارسال پیام</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

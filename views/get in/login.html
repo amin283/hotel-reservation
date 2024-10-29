@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه ورود و ثبت‌نام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle">
+            <button class="toggle-btn" id="login-btn">ورود</button>
+            <button class="toggle-btn" id="signup-btn">ثبت‌نام</button>
+        </div>
+
+        <div class="form-container">
+            <!-- فرم ورود -->
+            <div class="form login-form" id="login-form">
+                <h2>ورود</h2>
+                <form action="/login" method="post">
+                    <input type="text" placeholder="نام کاربری" name="username" required>
+                    <input type="password" placeholder="رمز عبور" name="password" required>
+                    <button type="submit">ورود</button>
+                </form>
+            </div>
+
+            <!-- فرم ثبت‌نام -->
+            <div class="form signup-form" id="signup-form" style="display: none;">
+                <h2>ثبت‌نام</h2>
+                <form action="/signup" method="post">
+                    <input type="text" placeholder="نام کاربری" name="username" required>
+                    <input type="email" placeholder="ایمیل" name="email" required>
+                    <input type="password" placeholder="رمز عبور" name="password" required>
+                    <button type="submit">ثبت‌نام</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
